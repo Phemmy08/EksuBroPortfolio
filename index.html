@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKSU BRO - Your Campus Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>EKSU BRO</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">EKSU BRO</span>
+                    <br>Your Campus Connect
+                </h1>
+                <p class="hero-subtitle">
+                    Connecting hearts, simplifying life, and empowering students with comprehensive services
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">
+                        Explore Services
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        Get in Touch
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="float-item heart">💝</div>
+                    <div class="float-item crypto">₿</div>
+                    <div class="float-item book">📚</div>
+                    <div class="float-item laundry">👔</div>
+                    <div class="float-item ads">📢</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive solutions for your campus life</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="matchmaking">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Matchmaking</h3>
+                    <p>Finding your perfect match with personalized connections and relationship guidance</p>
+                    <div class="service-overlay">
+                        <h4>Love Connection</h4>
+                        <p>Professional matchmaking services to help you find meaningful relationships</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="laundry">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Laundry Services</h3>
+                    <p>Professional laundry and dry cleaning with convenient pickup and delivery</p>
+                    <div class="service-overlay">
+                        <h4>Clean & Fresh</h4>
+                        <p>Quality laundry services with online booking and tracking system</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="promotion">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Ads & Promotion</h3>
+                    <p>Strategic marketing solutions to boost your brand visibility and reach</p>
+                    <div class="service-overlay">
+                        <h4>Brand Boost</h4>
+                        <p>Creative advertising campaigns and promotional strategies for maximum impact</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="crypto">
+                    <div class="service-icon">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <h3>Cryptocurrency</h3>
+                    <p>Expert guidance on crypto investments, trading, and blockchain technology</p>
+                    <div class="service-overlay">
+                        <h4>Crypto Expert</h4>
+                        <p>Navigate the digital currency world with professional insights and support</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="academics">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Past Questions</h3>
+                    <p>Comprehensive collection of past examination questions and study materials</p>
+                    <div class="service-overlay">
+                        <h4>Academic Success</h4>
+                        <p>Boost your exam performance with our extensive question bank and resources</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="news">
+                    <div class="service-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>School Updates</h3>
+                    <p>Stay informed with the latest school news, events, and important announcements</p>
+                    <div class="service-overlay">
+                        <h4>Stay Connected</h4>
+                        <p>Real-time updates on campus events, academic schedules, and university news</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Couples</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Satisfied Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2000">0</div>
+                    <div class="stat-label">Students Helped</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About EKSU BRO</h2>
+                    <p class="about-description">
+                        EKSU BRO is your ultimate campus companion, dedicated to making student life easier and more fulfilling. 
+                        From finding love to managing daily needs, we provide comprehensive services that cater to every aspect of campus life.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trusted by thousands of students</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional and reliable services</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 customer support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Innovative solutions for modern needs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="rotating-circle">
+                        <div class="circle-text">EKSU BRO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to transform your campus experience?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234 814 735 6424</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Ajayianthony668@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>EKSU Campus, Ado-Ekiti</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="matchmaking">Matchmaking</option>
+                            <option value="laundry">Laundry Services</option>
+                            <option value="promotion">Ads & Promotion</option>
+                            <option value="crypto">Cryptocurrency</option>
+                            <option value="academics">Past Questions</option>
+                            <option value="news">School Updates</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>EKSU BRO</h3>
+                    <p>Your trusted campus companion for all life's needs. Amuludun of Eksu </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EKSU BRO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
